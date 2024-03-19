@@ -8,9 +8,12 @@
     "build": "react-scripts build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "client": "npm start --prefix project",
-    "start-flask": "python \"./project/src/Artificial Intelligence/app.py\"",
-    "dev": "npx concurrently \"npm start\" \"npm run client\" \"npm run start-flask\""
+    "client": "npm start --prefix client",
+    "dev": "node node_modules/concurrently/bin/concurrently.js \"npm run start\" \"npm run client\""
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
   },
   
   "keywords": [],
