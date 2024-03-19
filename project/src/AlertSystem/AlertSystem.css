@@ -1,0 +1,166 @@
+:root {
+    --white: #ffffff;
+    --input-bg: #f7f7f7;
+    --nav-color: #1976d2;
+    --primary-color: #FFD700;
+    --popup-bg: #2f2f2f;
+    --text-dark: #333;
+    --nav-height: 150px;
+    --background-color: #1a1a2e;
+    --card-background-color: #16213e;
+    --accent-color: #FFD700;
+    --font-color: #eaeaea;
+}
+
+body {
+    font-family: 'system-ui';
+    background-color: var(--background-color);
+    background-image: url('C:\\Users\\soham\\Final Year Project\\project\\public\\bgv2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    color: var(--font-color);
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 29px;
+}
+
+.log-container {
+    background: linear-gradient(313deg, #181835, #326291);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#file-log-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#file-log-list li {
+    background-color: var(--popup-bg);
+    color: var(--font-color);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#file-log-list li:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .log-container {
+        width: 90%;
+    }
+}
+
+/* ... existing styles ... */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: var(--popup-bg);
+    color: var(--font-color);
+}
+
+th, td {
+    padding: 0.5rem;
+    text-align: center;
+    border-bottom: 1px solid var(--white);
+}
+
+th {
+    background-color: var(--nav-color);
+    color: var(--white);
+}
+
+tr:nth-child(even) {
+    background-color: linear-gradient(313deg, #181835, #326291);;
+}
+
+@media (max-width: 768px) {
+    .log-container {
+        width: 90%;
+    }
+
+    table {
+        font-size: 0.8rem;
+    }
+}
+
+/* Parent container styles */
+.main-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 85vh; /* Optional: Adjust based on your layout needs */
+}
+
+/* Your existing .alert-section styles */
+.alert-section {
+    flex-basis: 50%; /* Each section takes up half the width */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(313deg, #181835, #326291);
+    border: 1px solid #fff;
+}
+
+
+/* Alert styles */
+.alert-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.alert-section li {
+    background-color: var(--popup-bg);
+    color: var(--font-color);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.alert-section li:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .log-section, .alert-section {
+        max-width: 100%;
+        flex-basis: auto; /* Reset flex-basis for mobile view */
+    }
+}
+
+/* Continue with existing styles... */
