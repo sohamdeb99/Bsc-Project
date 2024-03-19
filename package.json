@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "client": "npm start --prefix project",
-    "start-flask": "python \"C:\\Users\\soham\\Final Year Project\\project\\src\\Artificial Intelligence\\app.py\"",
-    "dev": "concurrently \"npm start\" \"npm run client\" \"npm run start-flask\""
+    "start-flask": "python \"./project/src/Artificial Intelligence/app.py\"",
+    "dev": "npx concurrently \"npm start\" \"npm run client\" \"npm run start-flask\""
   },
   "keywords": [],
   "author": "",
